@@ -1,11 +1,14 @@
 #include "BSTNode.h"
 
+//Jonathan Vazquez Rivera
+//jvazquez441@email.suagm.edu
+
+
 template<class T>
 class BSTree
 {
 public:
 	BSTree();
-	~BSTree();
 	void insert(T val);
 	bool remove(T val);
 	BSTNode<T>* search(T val);
@@ -19,7 +22,6 @@ private:
 	void visitInOrder(BSTNode<T>* node);
 	void visitPreOrder(BSTNode<T>* node);
 	void visitPostOrder(BSTNode<T>* node);
-	void removePostOrder(BSTNode<T>* node);
 	BSTNode<T>* recursiveSearch(BSTNode<T> *node, T val);
 	bool recursiveSearchForRemove(BSTNode<T>* node, T val);
 	BSTNode<T>* findLowest(BSTNode<T>* node);
@@ -29,12 +31,6 @@ template<class T>
 inline BSTree<T>::BSTree()
 {
 	root = 0;
-}
-
-template<class T>
-inline BSTree<T>::~BSTree()
-{
-	////////////////////////////////////////////////////////////////////////
 }
 
 template<class T>
@@ -194,12 +190,6 @@ inline void BSTree<T>::visitPostOrder(BSTNode<T>* node)
 		visitPostOrder(node->getRight());
 		cout << "-" << node->getInfo() << "-";
 	}
-}
-
-template<class T>
-inline void BSTree<T>::removePostOrder(BSTNode<T>* node)
-{
-	////////////////////////////////////////////////////////////////////////
 }
 
 template<class T>

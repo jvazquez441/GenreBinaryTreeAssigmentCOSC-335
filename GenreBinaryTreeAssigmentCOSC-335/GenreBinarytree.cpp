@@ -2,6 +2,9 @@
 #include <string>
 #include "BSTree.h"
 
+//Jonathan Vazquez Rivera
+//jvazquez441@email.suagm.edu
+
 using namespace std;
 
 int main()

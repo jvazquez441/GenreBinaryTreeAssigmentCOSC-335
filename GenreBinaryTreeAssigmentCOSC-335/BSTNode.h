@@ -1,6 +1,9 @@
 #include <iostream>
 using namespace std;
 
+//Jonathan Vazquez Rivera
+//jvazquez441@email.suagm.edu
+
 template <class T>
 class BSTNode
 {
